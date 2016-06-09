@@ -19,11 +19,19 @@ namespace Reddit
             _apiEndpoint = apiEndpoint;
         }
 
+        /// <summary>
+        /// Get all comments from /r/all
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<Comment>> Get()
         {
             return await ToComments(await _httpClient.GetAsync(_apiEndpoint));
         }
 
+        /// <summary>
+        /// Post a reply
+        /// </summary>
+        /// <param name="comment"></param>
         public void Post(Reply reply)
         {
             throw new NotImplementedException();
