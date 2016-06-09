@@ -45,7 +45,10 @@ namespace OhShitWaddup
         {
             ConfigurationsLoader configurationsLoader = new ConfigurationsLoader();
 
-            return await configurationsLoader.LoadAsync(new StreamReader(_configurationFileName));
+            using (var streamReader = new StreamReader(_configurationFileName))
+            {
+                return await configurationsLoader.LoadAsync(streamReader);
+            }
         }
     }
 }
