@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace Configuration
@@ -14,14 +13,16 @@ namespace Configuration
             _configurationFileName = configurationFileName;
         }
 
-        public static void Load()
+        public Configuration Load()
         {
             try
             {
                 using (StreamReader r = new StreamReader("file.json"))
                 {
                     string json = r.ReadToEnd();
-                    List<Configuration> items = JsonConvert.DeserializeObject<List<Configuration>>(json);
+                    var configuration = JsonConvert.DeserializeObject<Configuration>(json);
+
+                    return configuration;
                 }
             }
             catch (Exception innerException)
