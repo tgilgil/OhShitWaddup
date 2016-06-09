@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OhShitWaddup", "OhShitWaddup\OhShitWaddup.csproj", "{3E0C6412-9C75-489E-A9C4-5CD7E7C62453}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6D67207C-9EED-4C6F-9F89-D2C92BF36F91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listener", "Listener\Listener.csproj", "{7BEAC069-8E2E-40F4-9F69-362AF1D5B2AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reddit", "Reddit\Reddit.csproj", "{DDC21B0E-52DC-4361-83D8-5B47664C67E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reddit.Tests", "Reddit.Tests\Reddit.Tests.csproj", "{A6110DD5-2175-44D2-826B-9795333F044A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reddit.Util", "Reddit.Util\Reddit.Util.csproj", "{4FA67911-1FB7-4323-AB35-EF2A7670BA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "Configuration\Configuration.csproj", "{05AE8685-38DD-4DA2-AAB3-E30FE03FE8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration.Tests", "Configuration.Tests\Configuration.Tests.csproj", "{10FB27F7-7CF8-4B89-8C16-82300CCBD03A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E0C6412-9C75-489E-A9C4-5CD7E7C62453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0C6412-9C75-489E-A9C4-5CD7E7C62453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0C6412-9C75-489E-A9C4-5CD7E7C62453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0C6412-9C75-489E-A9C4-5CD7E7C62453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BEAC069-8E2E-40F4-9F69-362AF1D5B2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEAC069-8E2E-40F4-9F69-362AF1D5B2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEAC069-8E2E-40F4-9F69-362AF1D5B2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEAC069-8E2E-40F4-9F69-362AF1D5B2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC21B0E-52DC-4361-83D8-5B47664C67E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC21B0E-52DC-4361-83D8-5B47664C67E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC21B0E-52DC-4361-83D8-5B47664C67E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC21B0E-52DC-4361-83D8-5B47664C67E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6110DD5-2175-44D2-826B-9795333F044A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6110DD5-2175-44D2-826B-9795333F044A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6110DD5-2175-44D2-826B-9795333F044A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6110DD5-2175-44D2-826B-9795333F044A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA67911-1FB7-4323-AB35-EF2A7670BA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA67911-1FB7-4323-AB35-EF2A7670BA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA67911-1FB7-4323-AB35-EF2A7670BA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA67911-1FB7-4323-AB35-EF2A7670BA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05AE8685-38DD-4DA2-AAB3-E30FE03FE8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05AE8685-38DD-4DA2-AAB3-E30FE03FE8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05AE8685-38DD-4DA2-AAB3-E30FE03FE8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05AE8685-38DD-4DA2-AAB3-E30FE03FE8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10FB27F7-7CF8-4B89-8C16-82300CCBD03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10FB27F7-7CF8-4B89-8C16-82300CCBD03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10FB27F7-7CF8-4B89-8C16-82300CCBD03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10FB27F7-7CF8-4B89-8C16-82300CCBD03A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6110DD5-2175-44D2-826B-9795333F044A} = {6D67207C-9EED-4C6F-9F89-D2C92BF36F91}
+		{10FB27F7-7CF8-4B89-8C16-82300CCBD03A} = {6D67207C-9EED-4C6F-9F89-D2C92BF36F91}
+	EndGlobalSection
+EndGlobal
