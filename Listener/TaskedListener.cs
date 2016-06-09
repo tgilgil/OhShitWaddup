@@ -7,10 +7,12 @@ namespace Listener
     public class TaskedListener : IListener
     {
         private IListener _internalListener;
+        private Action<Exception> _log;
 
-        public TaskedListener(IListener listener)
+        public TaskedListener(IListener listener, Action<Exception> log)
         {
             _internalListener = listener;
+            _log = log;
         }
 
         public async Task StartAsync()
@@ -23,10 +25,13 @@ namespace Listener
                     Thread.Sleep(5000);
                 } while (true);
             }
-            catch
+            catch (Exception e)
             {
-                StopAllAsync();
-                //throw exception;
+                _log(e);
+            }
+            finally
+            {
+                await StopAllAsync();
             }
         }
 

@@ -16,7 +16,7 @@ namespace OhShitWaddup
 
         static void Main(string[] args)
         {
-            Task.Run(() => Run());
+            Task.Run(() => Run()).Wait();
         }
 
         private async static Task Run()
@@ -25,7 +25,7 @@ namespace OhShitWaddup
             {
                 TaskedListener taskedListener = await CreateListenerAsync();
 
-                await taskedListener.Start(new CancellationToken());
+                await taskedListener.StartAsync();
 
                 Console.Read();
             }
@@ -38,7 +38,7 @@ namespace OhShitWaddup
             CommentsRepository commentsRepository = new CommentsRepository(_httpClient.Value, new Uri(configurations.RedditApiEndpoint));
             RedditListener redditListener = new RedditListener(commentsRepository);
 
-            return new TaskedListener(redditListener);
+            return new TaskedListener(redditListener, Console.WriteLine);
         }
 
         private async static Task<Configurations> LoadConfigurationsAsync()
