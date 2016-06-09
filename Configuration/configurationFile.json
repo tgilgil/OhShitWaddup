@@ -1,4 +1,4 @@
 ﻿/* This file will have to be excluded from the public Git once it will contain sensitive information */
 {
-  "redditApiEndpoint": "https://reddit.com/r/all/comments.json"
+  "redditApiEndpoint": "https://www.reddit.com/r/datboi/comments.json"
 }
