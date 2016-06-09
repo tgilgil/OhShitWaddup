@@ -13,5 +13,20 @@ namespace Configuration
 
             RedditApiEndpoint = redditApiEndpoint;
         }
+
+        public override bool Equals(object obj)
+        {
+            var configurations = obj as Configurations;
+
+            if (configurations == null)
+                return false;
+
+            return RedditApiEndpoint == configurations.RedditApiEndpoint;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

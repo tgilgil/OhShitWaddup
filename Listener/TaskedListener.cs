@@ -13,29 +13,29 @@ namespace Listener
             _internalListener = listener;
         }
 
-        public async Task Start(CancellationToken cancellationToken)
+        public async Task StartAsync()
         {
            try
             {
                 do
                 {
-                    await _internalListener.Start(cancellationToken);
+                    await _internalListener.StartAsync();
                     Thread.Sleep(5000);
-                } while (!cancellationToken.CanBeCanceled);
+                } while (true);
             }
             catch
             {
-                StopAll();
+                StopAllAsync();
                 //throw exception;
             }
         }
 
-        public Task Stop()
+        public Task StopAsync()
         {
             throw new NotImplementedException();
         }
 
-        private void StopAll()
+        private Task StopAllAsync()
         {
             throw new NotImplementedException("This stops everything pending.");
         }

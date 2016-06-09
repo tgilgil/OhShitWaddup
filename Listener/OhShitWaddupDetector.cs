@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Listener
+﻿namespace Listener
 {
+    //todo 
     class OhShitWaddupDetector
     {
         private const string OhShitWaddup = "DAT BOI";

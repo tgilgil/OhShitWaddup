@@ -16,7 +16,7 @@ namespace Listener
             _ohShitWaddupDetector = new OhShitWaddupDetector();
         }
 
-        public async Task Start(CancellationToken cancellationToken)
+        public async Task StartAsync()
         {
             var comments = await _repository.Get();
 
@@ -29,7 +29,7 @@ namespace Listener
             Console.WriteLine("Comments analyzed.");
         }
 
-        public Task Stop()
+        public Task StopAsync()
         {
             throw new NotImplementedException();
         }

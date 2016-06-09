@@ -28,7 +28,7 @@ namespace Reddit
 
         public override int GetHashCode()
         {
-            return Author.GetHashCode() ^ Body.GetHashCode();
+            return base.GetHashCode();
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Listener
 {
     public interface IListener
     {
-        Task Start(CancellationToken cancellationToken);
-        Task Stop();
+        Task StartAsync();
+        Task StopAsync();
     }
 }
