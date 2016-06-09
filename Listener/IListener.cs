@@ -1,10 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace Listener
 {
     public interface IListener
     {
-        Task Start();
+        Task Start(CancellationToken cancellationToken);
         Task Stop();
     }
 }

@@ -44,13 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration.cs" />
-    <Compile Include="ConfigurationLoader.cs" />
-    <Compile Include="ConfigurationLoadingException.cs" />
+    <Compile Include="Configurations.cs" />
+    <Compile Include="ConfigurationsLoader.cs" />
+    <Compile Include="ConfigurationsLoadingException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="configurationFile.json" />
+    <None Include="configurationFile.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,6 @@
 ﻿using Reddit;
 using System;
-using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Listener
@@ -16,7 +16,7 @@ namespace Listener
             _ohShitWaddupDetector = new OhShitWaddupDetector();
         }
 
-        public async Task Start()
+        public async Task Start(CancellationToken cancellationToken)
         {
             var comments = await _repository.Get();
 

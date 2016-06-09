@@ -19,7 +19,7 @@ namespace Listener
             {
                 do
                 {
-                    await _internalListener.Start();
+                    await _internalListener.Start(cancellationToken);
                     Thread.Sleep(5000);
                 } while (!cancellationToken.CanBeCanceled);
             }

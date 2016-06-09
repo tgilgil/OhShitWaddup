@@ -1,3 +1,4 @@
-﻿{
-
+﻿/* This file will have to be excluded from the public Git */
+{
+  "redditApiEndpoint": "https://reddit.com/r/all/comments.json"
 }
